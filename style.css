@@ -1,0 +1,48 @@
+  body {
+    background-image: url("images/WoodTexture.png");
+  }
+
+  h1 {
+    font-weight: bold;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .piano {
+    display: flex;
+  }
+  
+  .W {
+    width: 100px;
+    height: 500px;
+    border-radius: 10px;
+    border: 3px solid black;
+    z-index: 1;
+    background-color: white;
+  }
+  
+  .B {
+    width: 50px;
+    height: 250px;
+    border-radius: 10px;
+    margin-right: -25px;
+    margin-left: -25px;
+    z-index: 2;
+    background-color: black;
+  }
+
+  .W.keypress {
+    background-color: rgb(220, 220, 220);
+  }
+  
+  .B.keypress {
+    background-color: rgb(45, 45, 45);
+  }
