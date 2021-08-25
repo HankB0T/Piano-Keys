@@ -1,3 +1,6 @@
+/*Media Queries: Landscape*/
+@media screen and (max-width: 640px) {
+  
   body {
     background-image: url("images/WoodTexture.png");
   }
@@ -5,7 +8,7 @@
   h1 {
     font-weight: bold;
     color: black;
-    font-size: 50px;
+    font-size: 3rem;
     text-align: center;
   }
   
@@ -21,20 +24,20 @@
   }
   
   .W {
-    width: 100px;
-    height: 500px;
-    border-radius: 10px;
+    width: 2.5rem;
+    height: 12.5rem;
+    border-radius: 0.5rem;
     border: 3px solid black;
     z-index: 1;
     background-color: white;
   }
   
   .B {
-    width: 50px;
-    height: 250px;
+    width: 1.25rem;
+    height: 6.25rem;
     border-radius: 10px;
-    margin-right: -25px;
-    margin-left: -25px;
+    margin-right: -0.625rem;
+    margin-left: -0.625rem;
     z-index: 2;
     background-color: black;
   }
@@ -46,3 +49,109 @@
   .B.keypress {
     background-color: rgb(45, 45, 45);
   }
+}
+
+
+/*Media Queries: Portrait*/
+@media screen and (max-width: 360px) {
+
+  body {
+    background-image: url("images/WoodTexture.png");
+  }
+
+  h1 {
+    font-weight: bold;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .piano {
+    display: flex;
+  }
+  
+  .W {
+    width: 2.5rem;
+    height: 12.5rem;
+    border-radius: 0.5rem;
+    border: 3px solid black;
+    z-index: 1;
+    background-color: white;
+  }
+  
+  .B {
+    width: 1.25rem;
+    height: 6.25rem;
+    border-radius: 10px;
+    margin-right: -0.625rem;
+    margin-left: -0.625rem;
+    z-index: 2;
+    background-color: black;
+  }
+
+  .W.keypress {
+    background-color: rgb(220, 220, 220);
+  }
+  
+  .B.keypress {
+    background-color: rgb(45, 45, 45);
+  }
+}
+
+@media screen and (min-width: 641px) {
+body {
+  background-image: url("images/WoodTexture.png");
+}
+
+h1 {
+  font-weight: bold;
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.piano {
+  display: flex;
+}
+
+.W {
+  width: 5rem;
+  height: 25rem;
+  border-radius: 1rem;
+  border: 3px solid black;
+  z-index: 1;
+  background-color: white;
+}
+
+.B {
+  width: 2.5rem;
+  height: 12.5rem;
+  border-radius: 10px;
+  margin-right: -1.25rem;
+  margin-left: -1.25rem;
+  z-index: 2;
+  background-color: black;
+}
+
+.W.keypress {
+  background-color: rgb(220, 220, 220);
+}
+
+.B.keypress {
+  background-color: rgb(45, 45, 45);
+}
+}
